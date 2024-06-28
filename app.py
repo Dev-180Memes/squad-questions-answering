@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 app = Flask(__name__)
 
 # Load your saved model and pretrained tokenizer
-model_directory = "./bert_squad_final"
+model_directory = "./tinybert_squad_final"
 model = AutoModelForQuestionAnswering.from_pretrained(model_directory)
 tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
 
